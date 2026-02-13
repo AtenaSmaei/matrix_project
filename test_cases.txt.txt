@@ -1,0 +1,470 @@
+===========================================
+TEST CASE 1: Basic Matrix Operations (2x2)
+===========================================
+Input:
+2 2
+1 2
+3 4
+2 2
+5 6
+7 8
+2
+2
+1 3
+3 1
+
+Output:
+Enter rows & cols of Matrix A: Enter matrix values (2x2):
+Enter rows & cols of Matrix B: Enter matrix values (2x2):
+A + B:
+6 8 
+10 12 
+A - B:
+-4 -4 
+-4 -4 
+Enter a scalar value (k): 2
+Result of k * A:
+2 4 
+6 8 
+Transpose(A):
+1 3 
+2 4 
+A * B:
+19 22 
+43 50 
+Enter size of vectors: Enter vector 1:
+Enter vector 2:
+v1 + v2:
+4 4 
+Dot product (v1·v2): 6
+Normalize(v1):
+0.316228 0.948683 
+Determinant of A: -2
+Inverse of A:
+-2 1 
+1.5 -0.5 
+Program Finished.
+
+===========================================
+TEST CASE 2: 3x3 Matrix Operations
+===========================================
+Input:
+3 3
+1 2 3
+0 1 4
+5 6 0
+3 3
+1 0 0
+0 1 0
+0 0 1
+5
+3
+1 2 3
+4 5 6
+
+Output:
+Enter rows & cols of Matrix A: Enter matrix values (3x3):
+Enter rows & cols of Matrix B: Enter matrix values (3x3):
+A + B:
+2 2 3 
+0 2 4 
+5 6 1 
+A - B:
+0 2 3 
+0 0 4 
+5 6 -1 
+Enter a scalar value (k): 5
+Result of k * A:
+5 10 15 
+0 5 20 
+25 30 0 
+Transpose(A):
+1 0 5 
+2 1 6 
+3 4 0 
+A * B:
+1 2 3 
+0 1 4 
+5 6 0 
+Enter size of vectors: Enter vector 1:
+Enter vector 2:
+v1 + v2:
+5 7 9 
+Dot product (v1·v2): 32
+Cross product:
+-3 6 -3 
+Normalize(v1):
+0.267261 0.534522 0.801785 
+Determinant of A: 1
+Inverse of A:
+-24 18 5 
+20 -15 -4 
+-5 4 1 
+Program Finished.
+
+===========================================
+TEST CASE 3: Error Handling - Mismatched Dimensions
+===========================================
+Input:
+2 3
+1 2 3
+4 5 6
+3 2
+7 8
+9 10
+11 12
+2
+2
+2 3
+3 4
+
+Output:
+Enter rows & cols of Matrix A: Enter matrix values (2x3):
+Enter rows & cols of Matrix B: Enter matrix values (3x2):
+error : rows and columns of two matrices are not equel
+error : rows and columns of two matrices are not equel
+Enter a scalar value (k): 2
+Result of k * A:
+2 4 6 
+8 10 12 
+Transpose(A):
+1 4 
+2 5 
+3 6 
+A * B:
+58 64 
+139 154 
+Enter size of vectors: Enter vector 1:
+Enter vector 2:
+v1 + v2:
+5 7 
+Dot product (v1·v2): 18
+Normalize(v1):
+0.5547 0.83205 
+Program Finished.
+
+===========================================
+TEST CASE 4: 3D Vectors with Cross Product
+===========================================
+Input:
+2 2
+1 0
+0 1
+2 2
+2 0
+0 2
+3
+3
+1 2 3
+4 5 6
+
+Output:
+Enter rows & cols of Matrix A: Enter matrix values (2x2):
+Enter rows & cols of Matrix B: Enter matrix values (2x2):
+A + B:
+3 0 
+0 3 
+A - B:
+-1 0 
+0 -1 
+Enter a scalar value (k): 3
+Result of k * A:
+3 0 
+0 3 
+Transpose(A):
+1 0 
+0 1 
+A * B:
+2 0 
+0 2 
+Enter size of vectors: Enter vector 1:
+Enter vector 2:
+v1 + v2:
+5 7 9 
+Dot product (v1·v2): 32
+Cross product:
+-3 6 -3 
+Normalize(v1):
+0.267261 0.534522 0.801785 
+Determinant of A: 1
+Inverse of A:
+1 0 
+0 1 
+Program Finished.
+
+===========================================
+TEST CASE 5: Zero Vector and Scalar Operations
+===========================================
+Input:
+2 2
+0 0
+0 0
+2 2
+1 2
+3 4
+0
+2
+0 0
+1 1
+
+Output:
+Enter rows & cols of Matrix A: Enter matrix values (2x2):
+Enter rows & cols of Matrix B: Enter matrix values (2x2):
+A + B:
+1 2 
+3 4 
+A - B:
+-1 -2 
+-3 -4 
+Enter a scalar value (k): 0
+Result of k * A:
+0 0 
+0 0 
+Transpose(A):
+0 0 
+0 0 
+A * B:
+0 0 
+0 0 
+Enter size of vectors: Enter vector 1:
+Enter vector 2:
+v1 + v2:
+1 1 
+Dot product (v1·v2): 0
+error cannot normalize
+Normalize(v1):
+0 0 
+Determinant of A: 0
+error: matrix cannot be inverted
+Program Finished.
+
+===========================================
+TEST CASE 6: Identity Matrix Operations
+===========================================
+Input:
+3 3
+1 0 0
+0 1 0
+0 0 1
+3 3
+2 0 0
+0 2 0
+0 0 2
+2
+3
+1 2 3
+3 2 1
+
+Output:
+Enter rows & cols of Matrix A: Enter matrix values (3x3):
+Enter rows & cols of Matrix B: Enter matrix values (3x3):
+A + B:
+3 0 0 
+0 3 0 
+0 0 3 
+A - B:
+-1 0 0 
+0 -1 0 
+0 0 -1 
+Enter a scalar value (k): 2
+Result of k * A:
+2 0 0 
+0 2 0 
+0 0 2 
+Transpose(A):
+1 0 0 
+0 1 0 
+0 0 1 
+A * B:
+2 0 0 
+0 2 0 
+0 0 2 
+Enter size of vectors: Enter vector 1:
+Enter vector 2:
+v1 + v2:
+4 4 4 
+Dot product (v1·v2): 10
+Cross product:
+-4 8 -4 
+Normalize(v1):
+0.267261 0.534522 0.801785 
+Determinant of A: 1
+Inverse of A:
+1 0 0 
+0 1 0 
+0 0 1 
+Program Finished.
+
+===========================================
+TEST CASE 7: Rectangular Matrix Multiplication
+===========================================
+Input:
+2 3
+1 2 3
+4 5 6
+3 2
+1 2
+3 4
+5 6
+4
+4
+1 2 3 4
+2 3 4 5
+
+Output:
+Enter rows & cols of Matrix A: Enter matrix values (2x3):
+Enter rows & cols of Matrix B: Enter matrix values (3x2):
+error : rows and columns of two matrices are not equel
+error : rows and columns of two matrices are not equel
+Enter a scalar value (k): 4
+Result of k * A:
+4 8 12 
+16 20 24 
+Transpose(A):
+1 4 
+2 5 
+3 6 
+A * B:
+22 28 
+49 64 
+Enter size of vectors: Enter vector 1:
+Enter vector 2:
+v1 + v2:
+3 5 7 9 
+Dot product (v1·v2): 40
+Normalize(v1):
+0.182574 0.365148 0.547723 0.730297 
+Program Finished.
+
+===========================================
+TEST CASE 8: Single Element Matrices
+===========================================
+Input:
+1 1
+5
+1 1
+3
+2
+1
+2
+2
+
+Output:
+Enter rows & cols of Matrix A: Enter matrix values (1x1):
+Enter rows & cols of Matrix B: Enter matrix values (1x1):
+A + B:
+8 
+A - B:
+2 
+Enter a scalar value (k): 2
+Result of k * A:
+10 
+Transpose(A):
+5 
+A * B:
+15 
+Enter size of vectors: Enter vector 1:
+Enter vector 2:
+v1 + v2:
+4 
+Dot product (v1·v2): 4
+Normalize(v1):
+1 
+Determinant of A: 5
+Inverse of A:
+0.2 
+Program Finished.
+
+===========================================
+TEST CASE 9: Large Scalar Multiplication
+===========================================
+Input:
+2 2
+1 2
+3 4
+2 2
+5 6
+7 8
+10
+2
+2 4
+1 3
+
+Output:
+Enter rows & cols of Matrix A: Enter matrix values (2x2):
+Enter rows & cols of Matrix B: Enter matrix values (2x2):
+A + B:
+6 8 
+10 12 
+A - B:
+-4 -4 
+-4 -4 
+Enter a scalar value (k): 10
+Result of k * A:
+10 20 
+30 40 
+Transpose(A):
+1 3 
+2 4 
+A * B:
+19 22 
+43 50 
+Enter size of vectors: Enter vector 1:
+Enter vector 2:
+v1 + v2:
+3 7 
+Dot product (v1·v2): 14
+Normalize(v1):
+0.447214 0.894427 
+Determinant of A: -2
+Inverse of A:
+-2 1 
+1.5 -0.5 
+Program Finished.
+
+===========================================
+TEST CASE 10: Negative Numbers Test
+===========================================
+Input:
+2 2
+-1 2
+3 -4
+2 2
+5 -6
+-7 8
+-2
+2
+-1 2
+3 -4
+
+Output:
+Enter rows & cols of Matrix A: Enter matrix values (2x2):
+Enter rows & cols of Matrix B: Enter matrix values (2x2):
+A + B:
+4 -4 
+-4 4 
+A - B:
+-6 8 
+10 -12 
+Enter a scalar value (k): -2
+Result of k * A:
+2 -4 
+-6 8 
+Transpose(A):
+-1 3 
+2 -4 
+A * B:
+-33 22 
+43 -50 
+Enter size of vectors: Enter vector 1:
+Enter vector 2:
+v1 + v2:
+2 -2 
+Dot product (v1·v2): -11
+Normalize(v1):
+-0.447214 0.894427 
+Determinant of A: -2
+Inverse of A:
+2 1 
+1.5 0.5 
+Program Finished.
